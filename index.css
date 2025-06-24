@@ -1,0 +1,163 @@
+/* index.css */
+body {
+    color: white;
+    background-color: #121212;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 30px;
+    padding: 16px;
+    margin: 0;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: greenyellow;
+}
+
+header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid greenyellow;
+}
+
+h1 {
+    color: greenyellow;
+    margin-top: 15px;
+}
+
+h2 {
+    color: #ccc;
+    font-weight: normal;
+}
+
+section {
+    margin-top: 40px;
+    line-height: 1.6;
+}
+
+h3 {
+    color: greenyellow;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+}
+
+footer a {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.projeto {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid greenyellow;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.projeto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.projeto h3 {
+    color: greenyellow;
+}
+
+.projeto p {
+    color: #ddd;
+    margin-top: 10px;
+}
+
+.contato {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.botao-contato {
+    display: inline-block;
+    margin: 20px;
+    padding: 12px 24px;
+    background-color: greenyellow;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.botao-download {
+    color: greenyellow;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.botao-download:hover {
+    text-decoration: underline;
+}
